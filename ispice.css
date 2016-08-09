@@ -29,6 +29,7 @@ body{
 	-moz-user-select:none;
 	cursor:default;
 	transition: 0.5s;
+	overflow-y: hidden
 }
 .navel:hover{
 	background-color:#00C36F;
@@ -62,7 +63,7 @@ body{
 	color:white;
 }
 #main_container{
-	margin-top:80px;
+	margin-top:60px;
 	width:100vw;
 	font-family:'LaneNar';
 	color:white;
