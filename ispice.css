@@ -46,6 +46,15 @@ body{
 	flex-grow:2;
 	font-weight:bold;
 }
+#jargonButton{
+	position:absolute; 
+	bottom:0; 
+	height:50px; 
+	width:120px; 
+	background-color:yellow; 
+	z-index: 2;
+	margin-left: -5px;
+}
 #scrollrem{
 	position:fixed;
 	height:10vh;
@@ -73,13 +82,12 @@ body{
 	color:white;
 }
 #main_container{
-	margin-top:min(5vh , 40px);
+	margin-top: 40px;
 	width:100vw;
 	font-family:'LaneNar';
 	color:white;
 }
 #intro{
-	height:110vh;
 	background-image:url('assets/offering bhajis.jpg');
 	background-attachment:fixed;
 	background-size:110%;
@@ -105,6 +113,7 @@ body{
 	background-color:#A9469D;
 	-webkit-filter:saturate(125%);
 	filter:saturate(125%);
+	position:relative;
 }
 #jargon{
 	background-image:url('assets/open van.jpg');
@@ -118,7 +127,7 @@ body{
 .twitter-timeline{
 	position:relative;
 	z-index:2;
-	opacity:0.5;
+	opacity:0.7;
 	float:right;
 	margin:50px;
 	border-radius:10%;

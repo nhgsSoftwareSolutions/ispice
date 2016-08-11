@@ -10,7 +10,7 @@ $(document).scroll(function() {
 
 $('body').on({
     'mousewheel': function(e) {
-        if (e.target.id == 'el') return;
+ //       if (e.target.id == 'allowScroll' && $(window).scrollTop() > $("#visit").offset().top-40) return;
         e.preventDefault();
         e.stopPropagation();
     }
