@@ -3,8 +3,8 @@ $(document).scroll(function() {
   if(!scrolled){
 	scrolled = true;
 	console.log("scrolled!");
-	$('#scrollrem').delay(500).slideUp(1000);
-	$('#scrollrem-overlay').delay(500).slideUp(1000);
+	$('#scrollrem').slideUp(1000);
+	$('#scrollrem-overlay').slideUp(1000);
   }
 });
 
@@ -17,6 +17,6 @@ $(document).scroll(function() {
 });
 
 function smoothScroll(elt){
-	console.log($(elt).offset().top-80);
-	$('html, body').animate({scrollTop: $(elt).offset().top-80}, 500);
+	console.log($(elt).offset().top-40);
+	$('html, body').animate({scrollTop: $(elt).offset().top-40}, 500);
 }
