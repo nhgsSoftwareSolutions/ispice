@@ -88,18 +88,18 @@ body{
 	background-color:#992222;
 }
 #events{
-	background-image:url('assets/serving_customer.jpg');
+	background-image:url('assets/openVan.jpg');
 	background-color:#8033AB;
-	-webkit-filter:saturate(75%);
-	filter:saturate(75%);
+	-webkit-filter:saturate(100%);
+	filter:saturate(100%);
 }
 #catering{
-	background-image:url('assets/mad jo in van.jpg');
-	background-color:#0D6FCE;
+	background-image:url('assets/Koftah.jpg');
+	background-color:#6D4F1E;
 }
-#visit{
-	background-image:url('assets/marketvan.jpg');
-	background-color:#A9469D;
+#reviews{
+	background-image:url('assets/TasteIt.jpg');
+	background-color:#640;
 	-webkit-filter:saturate(125%);
 	filter:saturate(125%);
 }
@@ -171,4 +171,20 @@ body{
 @font-face{
 	font-family:LanePosh;
 	src:url(fonts/LANEPOSH.ttf);
+}
+.comment{
+	display:block;
+	position: relative;
+	transform-origin: center;
+	text-align: center;
+	filter:blur(2px);
+	transform: scale(0.8,0.8);
+	opacity: 0.8;
+	transition: all 1s;
+}
+.comment:hover{
+	filter:blur(0px);
+	transform: scale(1,1);
+	opacity: 1;
+	transition: all .4s;
 }
