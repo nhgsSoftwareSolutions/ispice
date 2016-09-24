@@ -188,3 +188,75 @@ body{
 	opacity: 1;
 	transition: all .4s;
 }
+#gallery{
+	box-sizing: border-box;
+	height: 100vh;
+	width: 10000px;
+	position: fixed;
+	top:5vh;
+}
+#gallery img{
+	display:inline-block;
+	vertical-align: middle;
+	max-width: 70vw;
+	max-height: 80vh;
+	width:auto;
+	height:auto;
+	transition: all 0.6s;
+	margin-right:20px;
+}
+/*the following is probably better done with keyframes but meh*/
+#gallery img.bg{
+	opacity: 0.7;
+}
+#gallery img.fg{
+	opacity: 1;
+}
+.sideButton{
+	position: fixed;
+	width:10vw;
+	height: 90vh;
+	background-color: rgba(0,0,0,0.3);
+	white-space: nowrap;
+    text-align: center;
+	transition: all 1s;
+}
+.sideButton:hover{
+	width: 11vw;
+	transition: all .6s;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.sideButton img{
+	width:8vw;
+	height:auto;
+	vertical-align: middle;
+	opacity: 0.4;
+	transition: all .6s;
+}
+.sideButton:hover > img{
+	opacity:1;
+}
+#leftButton{
+	top: 0;
+	left: 0;
+}
+#rightButton{
+	top: 0;
+	right: 0;
+}
+#caption p{
+	display: none;
+}
+#caption{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100vw;
+	height: 10vh;
+	background-color:red;
+	text-align: center;
+}
