@@ -98,7 +98,7 @@ body{
 	background-color:#6D4F1E;
 }
 #reviews{
-	background-image:url('assets/TasteIt.jpg');
+	background-image:url('assets/TasteIt.JPG');
 	background-color:#640;
 	-webkit-filter:saturate(125%);
 	filter:saturate(125%);
@@ -203,14 +203,16 @@ body{
 	width:auto;
 	height:auto;
 	transition: all 0.6s;
-	margin-right:20px;
+	margin-right:80px;
 }
 /*the following is probably better done with keyframes but meh*/
 #gallery img.bg{
-	opacity: 0.7;
+	opacity: 0.6;
+	transform: scaleY(0.67);
 }
 #gallery img.fg{
 	opacity: 1;
+	transform: scaleY(1);
 }
 .sideButton{
 	position: fixed;
@@ -259,4 +261,8 @@ body{
 	height: 10vh;
 	background-color:red;
 	text-align: center;
+	font-family: "LaneNar";
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
 }
