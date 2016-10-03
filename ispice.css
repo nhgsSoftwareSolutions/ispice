@@ -113,11 +113,12 @@ body{
 	filter:saturate(50%);
 }
 .twitter-timeline{
-	position:relative;
+	position:absolute;
 	z-index:2;
 	opacity:0.5;
 	float:right;
 	margin:50px;
+	margin-top: 0px;
 	border-radius:10%;
 	transition-duration:1s;
 }
@@ -135,6 +136,7 @@ body{
 	background-blend-mode:lighten;
 	-webkit-filter:saturate(75%);
 	filter:saturate(75%);
+	position:relative;
 }
 .picpage-title{
 	font-size:100px;
@@ -142,6 +144,7 @@ body{
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	cursor:default;
+	margin-bottom:10px;
 }
 .picpage .wrap{
 	width:100vw;
@@ -160,10 +163,14 @@ body{
 }
 .R.wrap img{left:0px;}
 .L.wrap img{right:0px;}
-.picpage.R *{float:left; margin-left: 10px;}
+.picpage.R p{float:left; margin-left: 10px;max-width: 67%;}
 .picpage.R .wrap{float:right;}
-.picpage.L *{float:right; margin-right:35px;}
+.picpage.L p{float:right; margin-right:35px;max-width: 67%;text-align: right;}
 .picpage.L .wrap{float:left;}
+.clear{
+	width: 100%;
+	float:clear;
+}
 @font-face{
 	font-family:LaneNar;
 	src:url(fonts/LANENAR_.ttf);
@@ -174,19 +181,51 @@ body{
 }
 .comment{
 	display:block;
-	position: relative;
-	transform-origin: center;
-	text-align: center;
+	position:absolute;
+	transform-origin:center;
+	text-align:center;
 	filter:blur(2px);
-	transform: scale(0.8,0.8);
+	transform:scale(0.8);
 	opacity: 0.8;
-	transition: all 1s;
+	transition:all 1s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	position:fixed;
+	float:left;
+	width:25vw;
+	font-size: 20px;
 }
 .comment:hover{
 	filter:blur(0px);
-	transform: scale(1,1);
+	transform: scale(1);
 	opacity: 1;
-	transition: all .4s;
+	transition:all .4s;
+	text-shadow: 1px 2px 3px #000;
+}
+#rev1:hover{
+	color:#FFF500;
+}
+#rev2:hover{
+	color:#A5FC00;
+}
+#rev3:hover{
+	color:#FA0;
+}
+#rev4:hover{
+	color:#17DFFB;
+}
+.regcont{
+	margin:auto;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 1px 2px 3px #000;
+}
+.subtext{
+	margin:auto;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: 1px 2px 3px #000;
 }
 #gallery{
 	box-sizing: border-box;
@@ -292,4 +331,31 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#nextEvent{
+	position: absolute;
+	width: 35vw;
+	height: 30vh;
+	left: 5vw;
+	background-color: rgba(255,64,0,0.8);
+	text-align: center;
+	border-radius: 16px;
+	display: table;
+}
+#nextEvent div{
+	display: table-cell;
+	vertical-align: middle;
+}
+#nextEvent h3{
+	font-size: 30px;
+	margin: 5px;
+	vertical-align: middle;
+}
+#nextEvent h4{
+	font-size: 24px;
+	margin: 8px;
+	vertical-align: middle;
 }

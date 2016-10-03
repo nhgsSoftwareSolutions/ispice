@@ -1,3 +1,18 @@
+$(function(){
+    $.ajax({
+        url : "event.txt",
+        dataType: "text",
+        success : function (data) {
+            console.log(data)
+            text = data.split("\n")
+            $("#eventName").html(text[0])
+            $("#eventPlace").html(text[1])
+            $("#eventTime").html(text[2])
+        }
+    });
+});
+
+
 var scrolled = false;
 $(document).scroll(function() {
   if(!scrolled){
