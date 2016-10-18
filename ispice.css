@@ -140,11 +140,11 @@ body{
 }
 .picpage-title{
 	font-size:100px;
-	margin:50px;
+	margin:20px;
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	cursor:default;
-	margin-bottom:10px;
+	margin-bottom:0px;
 }
 .picpage .wrap{
 	width:100vw;
@@ -320,6 +320,7 @@ body{
 	width: 12vw;
 	height: 10vh;
 	background-color: #00E38F;
+	border-radius: 12px;
 }
 #homeButton p{
 	font-family: LaneNar;
@@ -338,24 +339,15 @@ body{
 #nextEvent{
 	position: absolute;
 	width: 35vw;
-	height: 30vh;
+	height: 40vh;
 	left: 5vw;
 	background-color: rgba(255,64,0,0.8);
 	text-align: center;
-	border-radius: 16px;
 	display: table;
 }
-#nextEvent div{
-	display: table-cell;
-	vertical-align: middle;
-}
-#nextEvent h3{
-	font-size: 30px;
-	margin: 5px;
-	vertical-align: middle;
-}
-#nextEvent h4{
-	font-size: 24px;
-	margin: 8px;
-	vertical-align: middle;
+#nextEvent iframe{
+	width: 90%;
+	height: 90%;
+	left: 5%;
+	margin-top:2vh;
 }
