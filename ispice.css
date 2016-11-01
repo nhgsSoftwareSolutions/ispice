@@ -257,7 +257,7 @@ body{
 .sideButton{
 	position: fixed;
 	width:10vw;
-	height: 90vh;
+	height: 100vh;
 	background-color: rgba(0,0,0,0.3);
 	white-space: nowrap;
     text-align: center;
@@ -308,16 +308,16 @@ body{
 }
 #homeButton{
 	position: fixed;
-	left: 1vw;
-	bottom: 1vh;
+	left: 45vw;
+	bottom: 2vh;
 	width: 10vw;
 	height: 8vh;
 	background-color: #00C36F;
 	transition: all 0.6s;
 }
 #homeButton:hover{
-	left: 0vw;
-	bottom: 0vh;
+	left: 44vw;
+	bottom: 1vh;
 	width: 12vw;
 	height: 10vh;
 	background-color: #00E38F;
