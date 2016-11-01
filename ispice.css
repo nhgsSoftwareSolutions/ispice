@@ -1,277 +1,355 @@
 *{
-    overflow-x:hidden;
+	overflow-x: hidden;
 }
 body{
-    background-color:#EB9300;
-    margin:0px;
-    padding:0px;
+	background-color:#EB9300;
+	margin:0px;
+	padding:0px;
 }
 #navbar{
-    width:100vw;
-    height:40px;
-    background-color:#931311;
-    top:0px;
-    left:0px;
-    position:fixed;
-    display:flex;
-    flex-direction:row;
+	width:100vw;
+	height:40px;
+	background-color:#931311;
+	top:0px;
+	left:0px;
+	position:fixed;
+	display:flex;
+	flex-direction:row;
 }
 .navel{
-    display:table-cell;
-    text-align:center;
-    vertical-align:middle;
-    background-color:#DA3E00;
-    font-family:'LanePosh';
-    color:black!important;
-    font-size:17px;
-    font-weight:lighter;
-    flex-grow:1;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    cursor:default;
-    transition: 0.5s;
-    height:40px;
-    overflow-y:hidden
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	background-color:#DA3E00;
+	font-family:'LanePosh';
+	color:black!important;
+	font-size:17px;
+	font-weight:lighter;
+	flex-grow:1;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	transition: 0.5s;
+	height:40px;
+	overflow-y: hidden
 }
 .navel h2{
-    margin:4px;
-    vertical-align:middle;
-    padding:0px;
+	margin:4px;
+	vertical-align:middle;
+	padding:0px;
 }
 .navel:hover{
-    background-color:#00C36F;
-    flex-grow:2;
-    font-weight:bold;
+	background-color:#00C36F;
+	flex-grow:2;
+	font-weight:bold;
 }
 #scrollrem{
-    position:fixed;
-    height:10vh;
-    width:100vw;
-    bottom:0px;
-    left:0px;
-    opacity:0.6;
-    z-index:1;
-    background-color:#4E4545;
+	position:fixed;
+	height:10vh;
+	width:100vw;
+	bottom:0px;
+	left:0px;
+	opacity:0.6;
+	z-index:1;
+	background-color:#4E4545;
 }
 #scrollrem-overlay{
-    position:fixed;
-    vertical-align:middle;
-    height:10vh;
-    width:100vw;
-    bottom:0px;
-    left:0px;
-    z-index:1;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    cursor:default;
-    font-size:17px;
-    letter-spacing:8px;
-    text-align:center;
-    color:white;
+	position:fixed;
+	vertical-align:middle;
+	height:10vh;
+	width:100vw;
+	bottom:0px;
+	left:0px;
+	z-index:1;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	font-size:17px;
+	letter-spacing:8px;
+	text-align:center;
+	color:white;
 }
 #main_container{
-    margin-top:min(5vh , 40px);
-    width:100vw;
-    font-family:'LaneNar';
-    color:white;
+	margin-top:min(5vh , 40px);
+	width:100vw;
+	font-family:'LaneNar';
+	color:white;
 }
 #intro{
-    height:110vh;
-    background-image:url('assets/offering bhajis.jpg');
-    background-attachment:fixed;
-    background-size:110%;
-    text-align:center;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    cursor:default;
-    position:static;
-    background-color:#992222;
+	height:110vh;
+	background-image:url('assets/offering bhajis.jpg');
+	background-attachment:fixed;
+	background-size:110%;
+	text-align:center;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	position:static;
+	background-color:#992222;
 }
 #events{
-    background-image:url('assets/openVan.jpg');
-    background-color:#8033AB;
-    -webkit-filter:saturate(100%);
-    filter:saturate(100%);
+	background-image:url('assets/openVan.jpg');
+	background-color:#8033AB;
+	-webkit-filter:saturate(100%);
+	filter:saturate(100%);
 }
 #catering{
-    background-image:url('assets/IMG_0458.jpg');
-    background-color:#009C86;
+	background-image:url('assets/Koftah.jpg');
+	background-color:#6D4F1E;
+}
+#reviews{
+	background-image:url('assets/TasteIt.JPG');
+	background-color:#640;
+	-webkit-filter:saturate(125%);
+	filter:saturate(125%);
 }
 #jargon{
-    background-image:url('assets/open van.jpg');
-    background-color:#F4E866;
-    background-size:100%;
-    background-position:50%-20%;
-    height:40vh!important;
-    -webkit-filter:saturate(50%);
-    filter:saturate(50%);
+	background-image:url('assets/open van.jpg');
+	background-color:#F4E866;
+	background-size:100%;
+	background-position:50%-20%;
+	height:40vh!important;
+	-webkit-filter:saturate(50%);
+	filter:saturate(50%);
 }
 .twitter-timeline{
-    position:relative;
-    z-index:2;
-    opacity:0.5;
-    float:right;
-    margin:50px;
-    border-radius:10%;
-    transition-duration:1s;
+	position:absolute;
+	z-index:2;
+	opacity:0.5;
+	float:right;
+	margin:50px;
+	margin-top: 0px;
+	border-radius:10%;
+	transition-duration:1s;
 }
 .twitter-timeline:hover{
-    opacity:1;
-    border-radius:0px;
+	opacity:1;
+	border-radius:0px;
 }
 .picpage{
-    width:100%;
-    height:calc(100vh - 40px);
-    padding:5px;
-    overflow:hidden;
-    background-size:100%;
-    background-attachment:fixed;
-    background-blend-mode:lighten;
-    -webkit-filter:saturate(75%);
-    filter:saturate(75%);
+	width:100%;
+	height:calc(100vh - 40px);
+	padding:5px;
+	overflow:hidden;
+	background-size:100%;
+	background-attachment:fixed;
+	background-blend-mode:lighten;
+	-webkit-filter:saturate(75%);
+	filter:saturate(75%);
+	position:relative;
 }
 .picpage-title{
-    font-size:100px;
-    margin:50px;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    cursor:default;
+	font-size:100px;
+	margin:20px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	margin-bottom:0px;
+	text-shadow: 1px 2px 3px #000;
 }
 .picpage .wrap{
-    width:100vw;
-    height:calc(100%+10px);
-    padding:0px;
-    margin:-5px;
-    overflow-y: hidden;
+	width:100vw;
+	height:calc(100%+10px);
+	padding:0px;
+	margin:-5px;
+	overflow-y: hidden;
 }
 .wrap img{
-    height:95vh;
-    width:100vw;
-    position:relative;
-    top:0px;
-    padding:0px;
-    margin:0px;
+	height:95vh;
+	width:100vw;
+	position:relative;
+	top:0px;
+	padding:0px;
+	margin:0px;
 }
 .R.wrap img{left:0px;}
 .L.wrap img{right:0px;}
-.picpage.R *{float:left; margin-left: 10px;}
+.picpage.R p{float:left; margin-left: 10px;max-width: 67%;}
 .picpage.R .wrap{float:right;}
-.picpage.L *{float:right; margin-right:35px;}
+.picpage.L p{float:right; margin-right:35px;max-width: 67%;text-align: right;}
 .picpage.L .wrap{float:left;}
-@font-face{
-    font-family:LaneNar;
-    src:url(fonts/LANENAR_.ttf);
+.clear{
+	width: 100%;
+	float:clear;
 }
 @font-face{
-    font-family:LanePosh;
-    src:url(fonts/LANEPOSH.ttf);
+	font-family:LaneNar;
+	src:url(fonts/LANENAR_.ttf);
+}
+@font-face{
+	font-family:LanePosh;
+	src:url(fonts/LANEPOSH.ttf);
 }
 .comment{
-    display:block;
-    position:relative;
-    transform-origin:center;
-    text-align:center;
-    filter:blur(2px);
-    transform:scale(0.8,0.8);
-    opacity: 0.8;
-    transition:all 1s;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    cursor:default;
-    position:fixed;
-    float:left;
-    width:25vw;
+	display:block;
+	position:absolute;
+	transform-origin:center;
+	text-align:center;
+	filter:blur(2px);
+	transform:scale(0.8);
+	opacity: 0.8;
+	transition:all 1s;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	position:fixed;
+	float:left;
+	width:25vw;
+	font-size: 20px;
 }
 .comment:hover{
-    filter:blur(0px);
-    transform: scale(1,1);
-    opacity: 1;
-    transition:all .4s;
+	filter:blur(0px);
+	transform: scale(1);
+	opacity: 1;
+	transition:all .4s;
+	text-shadow: 1px 2px 3px #000;
 }
 #rev1:hover{
-    color:#FFF500;
+	color:#FFF500;
 }
 #rev2:hover{
-    color:#A5FC00;
+	color:#A5FC00;
 }
 #rev3:hover{
-    color:#17DFFB;
+	color:#FA0;
 }
 #rev4:hover{
-    color:#F0005D;
+	color:#17DFFB;
 }
 .regcont{
-    margin:auto;
-    font-size:2em;
+	margin:auto;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 1px 2px 3px #000;
+}
+.subtext{
+	margin:auto;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: 1px 2px 3px #000;
 }
 #gallery{
-    box-sizing:border-box;
-    height:100vh;
-    width:10000px;
-    position:fixed;
-    top:5vh;
+	box-sizing: border-box;
+	height: 100vh;
+	width: 10000px;
+	position: fixed;
+	top:5vh;
 }
 #gallery img{
-    display:inline-block;
-    vertical-align:middle;
-    max-width:70vw;
-    max-height:80vh;
-    width:auto;
-    height:auto;
-    transition:all 0.6s;
-    margin-right:20px;
+	display:inline-block;
+	vertical-align: middle;
+	max-width: 70vw;
+	max-height: 80vh;
+	width:auto;
+	height:auto;
+	transition: all 0.6s;
+	margin-right:80px;
 }
+/*the following is probably better done with keyframes but meh*/
 #gallery img.bg{
-    opacity:0.7;
+	opacity: 0.6;
+	transform: scaleY(0.67);
 }
 #gallery img.fg{
-    opacity:1;
+	opacity: 1;
+	transform: scaleY(1);
 }
 .sideButton{
-    position:fixed;
-    width:10vw;
-    height:90vh;
-    background-color:rgba(0,0,0,0.3);
-    white-space:nowrap;
-    text-align:center;
-    transition:all 1s;
+	position: fixed;
+	width:10vw;
+	height: 90vh;
+	background-color: rgba(0,0,0,0.3);
+	white-space: nowrap;
+    text-align: center;
+	transition: all 1s;
 }
 .sideButton:hover{
-    width:11vw;
-    transition:all .6s;
+	width: 11vw;
+	transition: all .6s;
 }
 .helper {
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 .sideButton img{
-    width:8vw;
-    height:auto;
-    vertical-align:middle;
-    opacity:0.4;
-    transition:all .6s;
+	width:8vw;
+	height:auto;
+	vertical-align: middle;
+	opacity: 0.4;
+	transition: all .6s;
 }
 .sideButton:hover > img{
-    opacity:1;
+	opacity:1;
 }
 #leftButton{
-    top:0;
-    left:0;
+	top: 0;
+	left: 0;
 }
 #rightButton{
-    top:0;
-    right:0;
+	top: 0;
+	right: 0;
 }
 #caption p{
-    display:none;
+	display: none;
 }
 #caption{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100vw;
-    height:10vh;
-    background-color:red;
-    text-align:center;
+	position: fixed;
+	bottom:0;
+	left:0;
+	width: 100vw;
+	height: 10vh;
+	background-color:red;
+	text-align: center;
+	font-family: "LaneNar";
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+#homeButton{
+	position: fixed;
+	left: 1vw;
+	bottom: 1vh;
+	width: 10vw;
+	height: 8vh;
+	background-color: #00C36F;
+	transition: all 0.6s;
+}
+#homeButton:hover{
+	left: 0vw;
+	bottom: 0vh;
+	width: 12vw;
+	height: 10vh;
+	background-color: #00E38F;
+	border-radius: 12px;
+}
+#homeButton p{
+	font-family: LaneNar;
+	font-weight: bold;
+	font-size: 30px;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#nextEvent{
+	position: relative;
+    float: left;
+	width: 35vw;
+	height: 40vh;
+	left: 5vw;
+	background-color: rgba(255,64,0,0.8);
+	text-align: center;
+	display: table;
+}
+#nextEvent iframe{
+	width: 90%;
+	height: 90%;
+	left: 5%;
+	margin-top:2vh;
 }
