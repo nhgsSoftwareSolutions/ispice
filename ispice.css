@@ -89,7 +89,7 @@ body{
 }
 #events{
 	background-image:url('assets/openVan.jpg');
-	/*background-color:#8033AB;*/
+	background-color:#803330;
 	-webkit-filter:saturate(100%);
 	filter:saturate(100%);
 }
