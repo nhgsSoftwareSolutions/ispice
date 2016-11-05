@@ -14,7 +14,7 @@
         <script src='scripts/ispice.js'></script>
         <div id='main_container'>
             <div id='intro'class='picpage'>
-                    <p style='font-size:150px;margin:75px;'>Ispice Street Food</p>
+                    <img src="assets/Ispice logo.png" alt="Ispice Veggie" id="IStitle">
                     <div class="comment"id='rev1'style='margin-left:0'>
                         <h3><i>"The best curry I have ever eaten"</i></h3>
                         <p>Customer at Harrogate Streetfood Festival</p>
@@ -47,7 +47,7 @@
                     style="border-width:0;" width="400" height="300" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
-            <div id='catering'class='picpage L'>
+            <div id='catering'class='picpage L'style="height:auto;min-height:calc(100vh - 40px);">
                 <p class='picpage-title pr'style='color:#FFA022;float:right'>catering</p>
                 <div class="clear"></div>
                 <div class='regcont'><p>Go on, enjoy yourself! Let Ispice do the work!</p>
@@ -59,7 +59,115 @@
                     <div class="clear"></div>
                     <p class="subtext">Our recipes are all vegan, and we cater for special diets and allergies.
                     Phone for a chat <b>07722&nbsp;630733</b>, or email <b>ispice@ispice.co</b>. Please note, a minimum of three weeks' notice is required. Non-returnable
-                    deposit of 10% to secure booking.</p></div>
+                    deposit of 10% to secure booking.</p>
+                </div>
+                <p class='picpage-title pr'style='color:#97E;float:left;margin-bottom:0px;'>Menus</p>
+                <div id="tilewrapper" style="margin-top:160px">
+                    <div class="tile" id="tile0">
+                        <div class="twrapper" onclick="fwd('#tile0')">
+                            <div class="pane cover" style="background-image:url(Assets/Images/Badger1.jpg)">
+                                <h2>Middle Eastern Cold Buffet</h2>
+                            </div>
+                            <div class="pane">
+                                <p><b>Full Set Meal</b> £9.50 per person (minimum charge £300)</p>
+                                <p><b>Broad Bean and Chick Pea Falafel with Fresh Coriander</b> - moist, deep-fried bean balls with a nutty flavour</p>
+                                <p><b>Hummus with Red Capsicum Garnish</b> - creamy chick pea dip with clean lemon after taste</p>
+                                <p><b>Tabooli</b> - juicy parsley, tomato &amp; bulgar wheat salad</p>
+                                <p><b>Babaganush</b> - rich baked aubergine with tahini &amp; fenugreek leaf dip</p>
+                                <p><b>Mixed Green Salad with Mustard Dressing</b> - flavoursome salad of mixed green leaves with a warm, tart dressing</p>
+                                <p><b>Tomato and Kalamata Olive Salad</b> - sumptuous tomato salad with the finest olives in our cashew pesto dressing</p>
+                                <p><b>Rice and Veg Salad with Fresh Coriander</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" id="tile1">
+                        <div class="twrapper" onclick="fwd('#tile1')">
+                            <div class="pane cover" style="background-image:url(Assets/Images/Badger2.jpg)">
+                                <h2>Hot meals</h2>
+                            </div>
+                            <div class="pane">
+                                <h3>Pulse Dishes</h3>
+                                <p><b>Chickpea</b> - Floury chickpeas in a rich fiery sauce using fresh tomato blended with fresh green chillies and whole garram masala and a mix of green mango and pomegranate giving a hint of sweet and sour.</p>
+                                <p><b>Blackeye Bean with Coconut</b> - These delicious, floury beans are made tender in a stock of fresh chilli and dessicated coconut creating a dish with a sweet and nutty flavour.</p>
+                                <p><b>Red Kidney Bean</b> - Big floury dark red beans set in a tomato rich sauce loaded with garlic and with a red chilli kick.</p>
+                                <p><b>Red Lentil Tarka</b> -  A thin dhal with strong flavours from burnt onion, garlic and fresh fenugreek leaves.</p>
+                                <p><b>Yellow Mung with Fennel Seed</b> - Another of chef's proud creations, terrifically tasty and satisfying with fragrant fennel and pungent fenugreek seed.</p>
+                                <p><b>Chana and Fresh Tomatoes</b> - A nutty bean in a sweet tomato based sauce. Perhaps our most popular dhal.</p>
+                                <p><b>Red Lentil, Tomato &amp; Coconut Milk</b> - A creamy rich dahl with rich coconut milk using red lentils, mustard seed and fresh tomatoes. A soothing Sri Lankan style dahl.</p>
+                                <p><b>Cucumber Dahl</b> - A floury yellow bean with firm, juicy pieces of cucumber, this beautiful colourful dahl, which has become one of our most popular, will amaze you!</p>
+                                <p><b>Dill Dahl</b> - A fresh green taste with dill and coriander leaf added to floury yellow split pea comprising a thick dhal.</p>
+                            </div>
+                            <div class="pane">
+                                <h3>Potato Dishes</h3>
+                                <p><b>New Potato with Fresh Fenugreek Leaf</b> - Strong flavours of spinach-green fresh fenugreek leaves and mustard around waxy new potato.</p>
+                                <p><b>Sweet Potato and Leek with Yogurt</b> - A mild, fragrant, creamy sauce with a tang of fresh ginger around soft sweet potato and leek.</p>
+                                <p><b>New Potato with Coriander Leaf, Turmeric &amp; Onion Seed</b> - Soft potato with fresh coriander leaf heated with fresh green chilli and fragrant with turmeric and fennel.</p>
+                                <p><b>Potato and Pea. Hot potato slices and juicy sweet peas</b> - A strong flavoured dish. One of our most popular.</p>
+                            </div>
+                            <div class="pane">
+                                <h3>Vegetable Dishes</h3>
+                                <p><b>Aubergine with Tamarind</b> - A subtle mix of spices and leaves to create a superb rich dish made sublime with added coconut milk.</p>
+                                <p><b>Mushroom with Almond and Lime</b> - Sweet, with a tomato based sauce, tempered with crunchy chopped almonds providing a textural contrast to the succulent mushrooms. Onion but no garlic, with warming chilli and black pepper to follow.</p>
+                                <p><b>Chef's Mushrooms</b> - A rich, rounded series of strong flavours wrapping the mushrooms in a warm, tomato-based sauce.</p>
+                                <p><b>Chef's Mixed Vegetable</b> - A pungent spice mix, clove and cardamon tempered with fenugreek and given heat with red chilli and black pepper. A dry curry using onion, garlic and tomato puree, cooked slowly to preserve the flavour and texture of the seasonal vegetables.</p>
+                                <p><b>Mixed Root Vegetable with Roasted Spices &amp; Almond</b> - A queen amongst recipes! The creamy sauce with added yogurt and the exotic nutty, smoky flavours of the roasted spices, enhance the intrinsic flavours of the root vegetables.</p>
+                                <p><b>Mixed Vegetable with Tamarind</b> - Sweet with a tart after taste, heat from the mustard oil underlying it all, slow cooked to preserve the flavour of the vegetables, tempered with fried onion seed and fresh green chilli.</p>
+                                <p><b>Marrow Koftah</b> - A fluffy, sweet ball of marrow and gram flour with fresh ginger and green chilli in a succulent onion sauce.</p>
+                                <p><b>Chilli Koftah with Spicy Sauce</b> - An amazing dish! The koftah, with fresh chilli and fresh coriander, have a biting texture and peppery kick in a creamy tomato sauce. </p>
+                                <p><b>Butternut Pumpkin and Cashew</b> - A sensational dish of cashew fried in mustard oil with mustard and cumin seeds and curry leaves flavouring soft and creamy pumpkin tempered with roasted gram flour.</p>
+                                <p><b>Tomato Curry</b> - Sweet with a slight warmth a blend of succulent tomatoes and aromatic spice mix of Sri Lankan origin. An astonishing dish from the marvellous tomato!</p>
+                                <p><b>Beetroot</b> - A rich, dark taste with a fragrant hit steamed in its own juice, finished with a touch of lime.</p>
+                                <p><b>Cauliflower with Fennel</b> - Sweet cauliflower, steamed in its own moisture, hot with whole red chillies, flavoured with fennel and garam masala.</p>
+                            </div>
+                            <div class="pane">
+                                <h3>Rice Dishes</h3>
+                                <p><b>Rice with Black Cumin and Cardamon</b> – a musty, fragrant white rice dish.</p>
+                                <p><b>Rice with Coconut and Cinnamon</b> – a faintly sweet, nutty rice.</p>
+                                <p><b>Rice with Carrot and Smoked Paprika</b> – pretty to look at, fragrant and firy.</p>
+                                <p><b>Lemon Rice with Cashew</b> – dazzling yellow, succulent with a nutty crunch of roasted cashew.</p>
+                                <p><b>Rice with Pandan and Curry Leaf</b> – fragrant white rice to suit any dishes.</p>
+                                <p><b>Rice with fresh Coriander and Pea</b> – a bright, faintly sweet rice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" id="tile2">
+                        <div class="twrapper" onclick="fwd('#tile2')">
+                            <div class="pane cover" style="background-image:url(Assets/Images/Badger3.jpg)">
+                                <h2>Streetfood Wraps</h2>
+                            </div>
+                            <div class="pane">
+                                <p><b>Haggis in a Pocket</b> – homemade vegan haggis with salad, chutneys and dips in a wrap. High protein, filling, delicious.</p>
+                                <p><b>Spicy Spinach Wrap</b> – spinach, chick pea flour, spices in a rich tomato sauce with salad and chutneys. </p>
+                                <p><b>Curry in a Pocket</b> – Dahl of the Day with rice, salad and chutneys in a wrap. Easy!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" id="tile3">
+                        <div class="twrapper" onclick="fwd('#tile3')">
+                            <div class="pane cover" style="background-image:url(Assets/Images/Badger3.jpg)">
+                                <h2>Snacks and Dips</h2>
+                            </div>
+                            <div class="pane">
+                                <p><b>Mushroom Pakora</b> £45 per large tray (25 teacup-size portions approx)</p>
+                                <p><b>Cauliflower Pakora, or Spinach &amp; Potato Pakora, or Onion Bhajis</b> £40 per large tray (25 teacup-size portions approx).</p>
+                                <p><b>Hot Potato Stick</b> – soft, spiced potato in a crisp filo shaped like a stick! £2.00 each</p>
+                                <p><b>Tattie Pattie with Fresh Coriander Leaf</b> – soft, fragrant potato with bright coriander leaf  in a crisp filo £2.00 each (gluten, mustard)</p>
+                                <p><b>Vegetable Samosas</b> 75p each (gluten, mustard)</p>
+                                <p><b>Fresh Mint and Yogurt Dip 500g</b> £2.95 (soya)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile" id="tile4">
+                        <div class="twrapper" onclick="fwd('#tile4')">
+                            <div class="pane cover" style="background-image:url(Assets/openvan.jpg)">
+                                <h2>Franny the Vanny</h2>
+                            </div>
+                            <div class="pane">
+                                <p><b>Franny the Vanny</b> - if you are planning an outdoor celebration, dazzle your guests with our fabulous Streetfood cooked on the spot in our beautiful Vintage Peugeot J7 van. A separate pricing system applies. Please ring or email for details. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="SmallPrint" style="width = 100%">
                 <p style="font-weight: bold; text-align: center; margin:2px">© 2016 Ispice - website by <a href="http://github.com/Danzibob">NHGS Software Solutions</a></p>
